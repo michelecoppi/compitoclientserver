@@ -54,7 +54,7 @@ public class Server {
                 messaggio = input.readLine();
                 if (messaggio.equalsIgnoreCase("lista")) {
                     for (int i = 0; i < lista.size(); i++) {
-                        output.writeBytes(lista.get(i) + " ");
+                        output.writeBytes((i+1)+")"+lista.get(i)+" ");
                        
                     }
                    output.writeBytes("\n");
